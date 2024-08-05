@@ -78,6 +78,7 @@
 
         <form
           class="bg-body rounded p-4 d-none d-xl-flex flex-column row-gap-2 col-4 align-self-center z-3"
+          id="desktop-form"
         >
           <h3 class="fw-bold m-0">Precisa de nossa ajuda?</h3>
           <p>Preencha o formulário abaixo e fale conosco</p>
@@ -85,7 +86,7 @@
           <div class="container">
             <div class="input-form rounded">
               <i class="bi bi-person text-primary"></i>
-              <input type="text" class="form-control" placeholder="Nome" />
+              <input type="text" class="form-control" placeholder="Nome" required name="name" id="name" />
             </div>
           </div>
 
@@ -95,7 +96,7 @@
                 src="./assets/img/state-icon.svg"
                 alt="Ícone representando o Brasil"
               />
-              <select class="form-select">
+              <select class="form-select" required name="state" id="state">
                 <option selected>Estado/UF</option>
                 <option value="AC">Acre (AC)</option>
                 <option value="AL">Alagoas (AL)</option>
@@ -132,14 +133,14 @@
           <div class="container">
             <div class="input-form rounded">
               <i class="bi bi-telephone text-primary"></i>
-              <input type="text" class="form-control" placeholder="Telefone" />
+              <input type="tel" class="form-control" placeholder="Telefone" name="phone" id="phone" required />
             </div>
           </div>
 
           <div class="container">
             <div class="input-form rounded">
               <i class="bi bi-envelope text-primary"></i>
-              <input type="text" class="form-control" placeholder="Email" />
+              <input type="email" class="form-control" placeholder="Email" required name="email" id="email" />
             </div>
           </div>
 
@@ -150,6 +151,9 @@
                 type="text"
                 class="form-control"
                 placeholder="Valor do precatório"
+                name="value"
+                id="value"
+                required
               />
             </div>
           </div>
@@ -160,6 +164,9 @@
                 type="text"
                 class="form-control"
                 placeholder="Número do processo"
+                name="process"
+                id="process"
+                required
               />
             </div>
           </div>
@@ -169,15 +176,15 @@
               <input
                 type="checkbox"
                 class="form-check-input"
-                id="exampleCheck1"
+                id="checkbox"
               />
-              <label class="form-check-label fs-" for="exampleCheck1"
+              <label class="form-check-label fs-6" for="checkbox"
                 >Aceito a política de privacidade</label
               >
             </div>
           </div>
           <button
-            type="button"
+            type="submit"
             class="btn btn-warning bg-yellow-light rounded-pill btn-lg fw-bold"
           >
             ENVIAR
@@ -189,6 +196,7 @@
     <!-- Mobile form -->
     <form
       class="bg-body rounded p-4 d-xl-none d-flex flex-column row-gap-2 col-11 col-md-8 m-auto align-self-center z-3 shadow mobile-form"
+      id="mobile-form"
     >
       <h3 class="fw-bold m-0">Precisa de nossa ajuda?</h3>
       <p>Preencha o formulário abaixo e fale conosco</p>
@@ -196,21 +204,21 @@
       <div class="container">
         <div class="input-form rounded">
           <i class="bi bi-person text-primary"></i>
-          <input type="text" class="form-control" placeholder="Nome" />
+          <input type="text" class="form-control" placeholder="Nome" required name="name" id="name" />
         </div>
       </div>
 
       <div class="container">
         <div class="input-form rounded">
           <i class="bi bi-telephone text-primary"></i>
-          <input type="text" class="form-control" placeholder="Telefone" />
+          <input type="tel" class="form-control" placeholder="Telefone" required name="phone" id="phone" />
         </div>
       </div>
 
       <div class="container">
         <div class="input-form rounded">
           <i class="bi bi-envelope text-primary"></i>
-          <input type="text" class="form-control" placeholder="Email" />
+          <input type="email" class="form-control" placeholder="Email" required name="email" id="email" />
         </div>
       </div>
 
@@ -221,20 +229,23 @@
             type="text"
             class="form-control"
             placeholder="Valor do precatório"
+            required
+            name="value"
+            id="value"
           />
         </div>
       </div>
 
       <div class="container">
         <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-          <label class="form-check-label fs-" for="exampleCheck1"
+          <input type="checkbox" class="form-check-input" id="checkbox" required />
+          <label class="form-check-label fs-" for="checkbox"
             >Aceito a política de privacidade</label
           >
         </div>
       </div>
       <button
-        type="button"
+        type="submit"
         class="btn btn-warning bg-yellow-light rounded-pill btn-lg"
       >
         Enviar
@@ -752,6 +763,7 @@ dipiscing elit.</span>
       </div>
     </footer>
     
+    <script src="./assets/js/form-handler.js"></script>
     <script src="./assets/libs/bootstrap-5.3.3/js/bootstrap.js"></script>
   </body>
 </html>

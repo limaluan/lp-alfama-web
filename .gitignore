@@ -1,0 +1,55 @@
+# Dependências do Composer
+/vendor/
+
+# Arquivos de configuração do ambiente
+.env
+.env.local
+.env.*.local
+
+# Arquivos de log
+/logs
+*.log
+
+# Diretórios do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos temporários do sistema operacional
+*.swp
+*.tmp
+*.bak
+*.backup
+*.idea/
+*.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Dependências e arquivos do Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Arquivos de cache do PHP
+*.php.cache
+
+# Arquivos gerados pelo PHPStorm
+.idea/
+
+# Configuração do EditorConfig
+.editorconfig
+
+# Arquivos de cache do Composer
+composer.lock
+
+# Pastas de cache e builds
+/cache/
+build/
+dist/
+tmp/
+
+# Arquivos de testes
+/tests/
+
+# Arquivos de configuração do VSCode
+.vscode/
