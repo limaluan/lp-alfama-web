@@ -15,7 +15,7 @@ img {
   -webkit-user-drag: none;
 }
 
-.main-section {
+.hero-section {
   background-image: url("../img/main-bg.svg");
   background-size: cover;
   border-radius: 0 0 0 150px;
@@ -93,8 +93,13 @@ img {
   background-color: #f6de6c;
 }
 
+.mobile-form {
+  transform: translateY(-1rem);
+  position: relative;
+}
+
 @media (min-width: 768px) {
-  .main-section {
+  .hero-section {
     height: 50rem;
     max-height: none;
 
