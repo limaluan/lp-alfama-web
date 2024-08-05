@@ -112,6 +112,14 @@ img {
   object-position: center 20%;
 }
 
+.bg-blue-dark {
+  background-color: #19407E;
+}
+
+footer article {
+  width: fit-content;
+}
+
 @media (min-width: 768px) {
   .card-text {
     width: 90%;
