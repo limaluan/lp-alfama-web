@@ -97,8 +97,19 @@ img {
   position: relative;
 }
 
-.card-image, .card-image-2 {
+.card-image,
+.card-image-2 {
   width: 100%;
+}
+
+.doctor-img {
+  width: 90%;
+  max-width: 20rem;
+  height: 80vw;
+  max-height: 20rem;
+  margin: auto;
+  object-fit: cover;
+  object-position: center 20%;
 }
 
 @media (min-width: 768px) {
@@ -121,6 +132,17 @@ img {
         width: initial;
       }
     }
+  }
+}
+
+@media (min-width: 992px) {
+  .doctor-img {
+    height: 590px;
+    max-width: none;
+    max-height: none;
+    width: auto;
+    margin: none;
+    object-fit: cover;
   }
 }
 
