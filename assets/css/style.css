@@ -138,7 +138,7 @@ img {
 @media (min-width: 992px) {
   .doctor-img {
     height: 590px;
-    max-width: none;
+    max-width: 320px;
     max-height: none;
     width: auto;
     margin: none;
